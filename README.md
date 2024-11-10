@@ -8,10 +8,15 @@ Change the password for the default user (neo4j).
 2.Create a .env file in the root directory with the following content:
 Update your .env file with the Neo4j credentials.
 **Set Up API Keys and Environment Variables**
+
 NEO4J_URI=bolt://localhost:7687
+
 NEO4J_USERNAME=<neo4j-username>
+
 NEO4J_PASSWORD=<neo4j-password>
+
 WEATHER_API_KEY=<your-openweather-api-key>
+
 NEWS_API_KEY=<your-news-api-key>
 
 
@@ -36,8 +41,12 @@ ollama serve --model llama2 --port 11434
 └── README.md                # Project documentation
 
 
+
+
 5. **Running the Application**
+
 uvicorn app:app --reload
+
 streamlit run frontend.py
 
 
